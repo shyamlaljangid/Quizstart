@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz java script</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+
+
+ 
+<body>
+    <div id="wrapper">
+        <div class="quiz">
+            <button>Quiz start</button>
+           <div class="qs">
+            <p class="timer"></p>
+            <p class="quation "></p>
+            <div class="answer">
+
+            </div>
+            </div>
+        </div>
+    </div>
+ <script>
+    let button = document.querySelector("button")
+    let timer = document.querySelector(".timer")
+    let quation = document.querySelector(".quation")
+    let answer= document.querySelector(".answer")
+    let qs = document.querySelector(".qs")
+     
+
+    let quations = ['2+2','2+2+2','2+2+2+2','2+2+2+2+2']
+    let answers=['4','6','8','10']
+     let op=[
+        [6, 22, 11, 4],
+        [6, 22, 11, 4],
+        [6, 22, 11, 4],
+        [6, 22, 11, 4]
+     ] 
+     
+      
+     button.addEventListener("click",start);
+     function start(){
+        button.style.display ="none"
+        let time= 5;
+     let set ;   
+
+
+        set = setInterval(()=>{
+        if(time === 0){
+          clearInterval(set)
+          time= 5
+          timer.innerHTML =5
+        
+
+        }
+       
+        timer.innerHTML =time--
+
+     },1000)
+    
+    
+     let array = []
+     function arrays(){
+        let asd =[];
+        for(let i=0; i<quation.length;i++){
+           
+         
+        }
+
+
+    
+  }
+ 
+}
+     
+      
+ </script>
+</body>
+
+</html>
